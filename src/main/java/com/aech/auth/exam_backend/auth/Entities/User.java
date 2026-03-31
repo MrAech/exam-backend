@@ -1,4 +1,4 @@
-package com.aech.auth.exam_backend.auth.entities;
+package com.aech.auth.exam_backend.auth.Entities;
 
 import java.time.Instant;
 import java.util.HashSet;
@@ -16,12 +16,14 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
+import jakarta.persistence.Table;
 import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Builder
 @Entity
+@Table(name = "users") // had to do it cause of h2 having "user" as keyword and getting angry
 public class User {
 
   @Id

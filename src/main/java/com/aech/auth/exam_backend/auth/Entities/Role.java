@@ -1,4 +1,4 @@
-package com.aech.auth.exam_backend.auth.entities;
+package com.aech.auth.exam_backend.auth.Entities;
 
 import java.util.UUID;
 

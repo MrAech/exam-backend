@@ -1,6 +1,6 @@
 package com.aech.auth.exam_backend.DTOs;
 
-import com.aech.auth.exam_backend.auth.entities.Provider;
+import com.aech.auth.exam_backend.auth.Entities.Provider;
 import java.time.Instant;
 import java.util.HashSet;
 import java.util.Set;
@@ -8,11 +8,13 @@ import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import jakarta.persistence.Table;
 import lombok.Builder;
 import lombok.Data;
 
 @Builder
 @Data
+@Table(name = "users")
 public class UserDto {
 
   private UUID id;
