@@ -113,4 +113,5 @@ public class JwtService {
     Claims c = parse(token).getPayload();
     return (String) c.get("email");
   }
+
 }
