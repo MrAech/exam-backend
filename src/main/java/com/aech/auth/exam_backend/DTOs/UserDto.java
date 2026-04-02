@@ -9,11 +9,15 @@ import java.util.UUID;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Builder
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "users")
 public class UserDto {
 
